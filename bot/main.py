@@ -5,7 +5,7 @@ import discord
 import praw
 from discord.ext.commands import has_permissions, MissingPermissions
 
-TOKEN = "Nzg1OTk5NjM1ODA2MDI3ODI2.X9ABNA.7K-EXQMLxtUbd4-rFYeiDXRSM3k"
+TOKEN = os.getenv("DISCORD_BOT_TOKEN")
 client = discord.Client()
 client = commands.Bot(command_prefix='!')
 
